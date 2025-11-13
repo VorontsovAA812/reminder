@@ -1,7 +1,9 @@
 package com.reminder.app.service;
 
+import com.reminder.app.exception.BusinessException;
 import com.reminder.app.model.User;
 import com.reminder.app.repository.UserRepository;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,7 +18,9 @@ public class UserService {
     }
 
     public User getUserById(Long id) {
-        return userRepository.findById(id).orElseThrow(() -> new RuntimeException("User not found"));
+        return userRepository.findById(id).orElseThrow(() -> new BusinessException(HttpStatus.NOT_FOUND,
+                "User with id " + id + " not found"
+        ));
     }
 
     public List<User> getAllUsers() {

@@ -10,11 +10,6 @@ import jakarta.persistence.FetchType;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ForeignKey;
 
-
-
-
-
-
 import java.time.LocalDateTime;
 
 public class Reminder {
