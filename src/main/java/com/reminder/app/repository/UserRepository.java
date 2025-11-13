@@ -1,4 +1,4 @@
-package com.reminder.app;
+package com.reminder.app.repository;
 
 import com.reminder.app.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;

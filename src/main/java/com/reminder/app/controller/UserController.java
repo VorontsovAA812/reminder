@@ -1,5 +1,6 @@
-package com.reminder.app;
+package com.reminder.app.controller;
 
+import com.reminder.app.repository.UserRepository;
 import com.reminder.app.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,4 +22,6 @@ public class UserController {
     public List<User> allUsers() {
         return userRepository.findAll();
     }
+
+
 }
