@@ -1,4 +1,4 @@
-package com.reminder.app.controller;
+package com.reminder.app.REST;
 
 import com.reminder.app.model.User;
 import com.reminder.app.service.UserService;
