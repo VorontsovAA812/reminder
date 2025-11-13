@@ -1,6 +1,5 @@
 package com.reminder.app.controller;
 
-import com.reminder.app.repository.UserRepository;
 import com.reminder.app.model.User;
 import com.reminder.app.service.UserService;
 import org.springframework.http.HttpStatus;
@@ -8,8 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
-
 
 
 @RestController
